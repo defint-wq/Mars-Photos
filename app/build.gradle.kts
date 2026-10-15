@@ -67,6 +67,7 @@ android {
 dependencies {
 
     // Import the Compose BOM
+    implementation("io.coil-kt:coil-compose:2.4.0")
     implementation(platform("androidx.compose:compose-bom:2024.12.01"))
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.compose.material3:material3")
@@ -86,4 +87,7 @@ dependencies {
     // Retrofit with Scalar Converter
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
 }
